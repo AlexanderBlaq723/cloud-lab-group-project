@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudTeam – Cloud Computing Lab Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">☁ Team Nexus</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-eyebrow">Cloud Computing – Practical Lab 1</p>
+    <h1>We build for the<br /><span>cloud generation.</span></h1>
+    <p>
+      A hands-on introduction to virtualization, static deployment, and
+      cloud infrastructure — by students, for students.
+    </p>
+    <div class="btn-group">
+      <a href="about.html" class="btn btn-primary">Meet the team →</a>
+      <a href="contact.html" class="btn btn-outline">Get in touch</a>
+    </div>
+  </section>
+ 
+  <!-- PROJECT OVERVIEW -->
+  <section>
+    <div class="container">
+      <p class="section-label">Project overview</p>
+      <h2>What we're building</h2>
+      <p class="lead">
+        This project is our submission for the Cloud Computing Practical Lab 1,
+        covering static website development and GitHub Pages deployment.
+      </p>
+ 
+      <!-- Featured image -->
+      <!-- Featured image -->
+<img src="img/image.jpg" alt="CloudTeam project image" style="width:100%; border-radius:10px; margin:2rem 0;" />
+ 
+      <div class="card-grid card-grid-3">
+        <div class="card">
+          <div class="tags"><span class="tag">Lab 1</span></div>
+          <h3 style="margin-top:0.8rem;">Virtualization</h3>
+          <p style="color:var(--muted);font-size:0.9rem;">
+            Setting up Oracle VM VirtualBox and exploring virtualized computing environments.
+          </p>
+        </div>
+        <div class="card">
+          <div class="tags"><span class="tag">Deployment</span></div>
+          <h3 style="margin-top:0.8rem;">GitHub Pages</h3>
+          <p style="color:var(--muted);font-size:0.9rem;">
+            Hosting a fully static website using GitHub's free Pages service — no server needed.
+          </p>
+        </div>
+        <div class="card">
+          <div class="tags"><span class="tag">Collaboration</span></div>
+          <h3 style="margin-top:0.8rem;">Group Work</h3>
+          <p style="color:var(--muted);font-size:0.9rem;">
+            Building together using Git workflows, pull requests, and shared repository management.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- TECH STACK -->
+  <section>
+    <div class="container">
+      <p class="section-label">Stack</p>
+      <h2>Built with</h2>
+      <p class="lead">Simple, portable, standards-based web technologies.</p>
+      <div class="card-grid card-grid-2">
+        <div class="card">
+          <h3>Frontend</h3>
+          <p style="color:var(--muted);font-size:0.9rem;margin-bottom:0.75rem;">
+            Plain HTML5, CSS3, and vanilla JavaScript — no frameworks, no build step.
+          </p>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Hosting &amp; Workflow</h3>
+          <p style="color:var(--muted);font-size:0.9rem;margin-bottom:0.75rem;">
+            Source control and deployment in one place via GitHub and GitHub Pages.
+          </p>
+          <div class="tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">GitHub Pages</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="card" style="text-align:center;padding:3rem 2rem;">
+        <p class="section-label" style="justify-content:center;">Ready to explore?</p>
+        <h2 style="max-width:440px;margin:0 auto 1rem;">Learn more about our team</h2>
+        <p style="color:var(--muted);max-width:400px;margin:0 auto 2rem;">
+          Find out who we are, what our roles are, and how to reach us.
+        </p>
+        <a href="about.html" class="btn btn-primary">See the team →</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-text">© 2026 TeamNexus · Cloud Computing Lab 1</p>
+    <a href="https://github.com" target="_blank" class="footer-link">GitHub Repository ↗</a>
+  </footer>
+ 
+  <div class="toast" id="toast"></div>
+ 
+  <script>
+    // Highlight active nav link
+    const links = document.querySelectorAll('.nav-links a');
+    links.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  </script>
+ 
+</body>
+</html>

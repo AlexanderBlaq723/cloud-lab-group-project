@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – CloudTeam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">☁ Team Nexus</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- PAGE HEADER -->
+  <section style="padding-top:100px;">
+    <div class="container">
+      <p class="section-label">Who we are</p>
+      <h1 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3.5rem);font-weight:700;letter-spacing:-0.03em;line-height:1.1;margin-bottom:1rem;">
+        Group Name:<br /><span style="color:var(--cyan);">Team Nexus</span>
+      </h1>
+      <p class="lead">
+        We are a group of students in the Cloud Computing course, working together
+        on Practical Lab 1. Our goal is to understand modern cloud infrastructure
+        through hands-on practice.
+      </p>
+ 
+      <!-- Stats -->
+      <div class="stat-row">
+        <div class="stat-item">
+          <span class="stat-num">5</span>
+          <span class="stat-label">Team members</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Deliverables</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">1</span>
+          <span class="stat-label">Live deployment</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- COURSE INFO -->
+  <section>
+    <div class="container">
+      <p class="section-label">Course</p>
+      <h2>About the project</h2>
+      <p class="lead">Context for this submission.</p>
+      <div class="card-grid card-grid-2">
+        <div class="card">
+          <h3>Course Title</h3>
+          <p style="color:var(--muted);font-size:0.95rem;margin-top:0.25rem;">
+            Cloud Computing – Practical Lab 1
+          </p>
+          <div class="tags" style="margin-top:0.75rem;">
+            <span class="tag">Virtualization</span>
+            <span class="tag">Static Deployment</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Project Description</h3>
+          <p style="color:var(--muted);font-size:0.9rem;margin-top:0.25rem;">
+            This project involves building and deploying a static website using
+            HTML, CSS, and JavaScript, then hosting it on GitHub Pages as part
+            of our introduction to cloud-based deployment workflows.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <hr />
+ 
+  <!-- TEAM MEMBERS -->
+  <section>
+    <!-- TEAM MEMBERS -->
+<section>
+  <div class="container">
+    <p class="section-label">The team</p>
+    <h2>Group members</h2>
+    <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:1.25rem;">
+
+      <div class="card member-card">
+        <div class="avatar">AY</div>
+        <span class="member-role">Group Leader</span>
+        <span class="member-name">Ador Alexander Yao</span>
+        <span class="member-desc">Coordinates the team and oversees project delivery.</span>
+      </div>
+
+      <div class="card member-card">
+        <div class="avatar">TR</div>
+        <span class="member-role">Repository Manager</span>
+        <span class="member-name">Tay Richmond</span>
+        <span class="member-desc">Manages the GitHub repository, branches, and deployments.</span>
+      </div>
+
+      <div class="card member-card">
+        <div class="avatar">PA</div>
+        <span class="member-role">Designer / Developer</span>
+        <span class="member-name">Prince Mills Akortsu</span>
+        <span class="member-desc">Responsible for the website layout and visual design.</span>
+      </div>
+
+      <div class="card member-card">
+        <div class="avatar">NT</div>
+        <span class="member-role">Content & Developer</span>
+        <span class="member-name">Nartey Theophilus</span>
+        <span class="member-desc">Writes and structures website content and copy.</span>
+      </div>
+
+      <div class="card member-card">
+        <div class="avatar">MZ</div>
+        <span class="member-role">Developer</span>
+        <span class="member-name">Mubarik Zakari</span>
+        <span class="member-desc">Implements JavaScript functionality and interactivity.</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-text">© 2026 TeamNexus · Cloud Computing Lab 1</p>
+    <a href="https://github.com" target="_blank" class="footer-link">GitHub Repository ↗</a>
+  </footer>
+ 
+  <script>
+    const links = document.querySelectorAll('.nav-links a');
+    links.forEach(link => {
+      if (link.href === window.location.href) link.classList.add('active');
+      else link.classList.remove('active');
+    });
+  </script>
+ 
+</body>
+</html>
