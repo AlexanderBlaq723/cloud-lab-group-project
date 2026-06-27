@@ -1,0 +1,31 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main # Change this to "master" if your default branch is called master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # 💡 UNCOMMENT THE TWO LINES BELOW IF YOU ARE USING REACT, VUE, OR NEXT.JS:
+    # - name: Install and Build
+    #   run: npm install && npm run build
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1 # ⚠️ Change this to your actual AWS S3 bucket region (e.g., us-west-2)
+
+    - name: Deploy to S3
+      run: |
+        aws s3 sync . s3://alexander-class-group-15--delete
+        # ⚠️ Replace YOUR-BUCKET-NAME with your actual S3 bucket name.
+        # ⚠️ If using React/Vue, change the "." above to your build folder (e.g., "./dist" or "./build")
