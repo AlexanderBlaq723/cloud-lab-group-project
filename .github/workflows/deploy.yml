@@ -26,6 +26,6 @@ jobs:
 
     - name: Deploy to S3
       run: |
-        aws s3 sync . s3://alexander-class-group-15--delete
+        aws s3 sync . s3://alexander-class-group-15
         # ⚠️ Replace YOUR-BUCKET-NAME with your actual S3 bucket name.
         # ⚠️ If using React/Vue, change the "." above to your build folder (e.g., "./dist" or "./build")
